@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KylersGame", "KylersGame\KylersGame.csproj", "{9E4F8386-73E6-4BB0-A761-C315AD51BE31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameEngine", "GameEngine\GameEngine.csproj", "{2694A3ED-2AD4-41CD-9E88-6982940D82DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E4F8386-73E6-4BB0-A761-C315AD51BE31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E4F8386-73E6-4BB0-A761-C315AD51BE31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E4F8386-73E6-4BB0-A761-C315AD51BE31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E4F8386-73E6-4BB0-A761-C315AD51BE31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2694A3ED-2AD4-41CD-9E88-6982940D82DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2694A3ED-2AD4-41CD-9E88-6982940D82DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2694A3ED-2AD4-41CD-9E88-6982940D82DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2694A3ED-2AD4-41CD-9E88-6982940D82DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7CF9EF0D-8FF9-4D98-851E-1D75A795C82B}
+	EndGlobalSection
+EndGlobal
