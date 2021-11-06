@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "KylersGame": {
+      "commandName": "Project",
+      "commandLineArgs": "/h 8 /w 8"
+    }
+  }
+}

@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace GameEngine
 {
@@ -8,5 +6,6 @@ namespace GameEngine
     {
         //Coordinate Location;
         public SquareState State = SquareState.Empty;
+        public ConsoleColor OuputColor;
     }
 }

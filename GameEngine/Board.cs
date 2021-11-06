@@ -45,5 +45,57 @@ namespace GameEngine
         {
             get { return _xw; }
         }
+
+        public void Clear()
+        {
+            for (int x = 0; x < _xw; x++)
+            {
+                for (int y = 0; y < _yh; y++)
+                {
+                    _squares[x, y].State = SquareState.Empty;
+                }
+            }
+        }
+
+        public void Print()
+        {
+            ConsoleColor currentFG = Console.ForegroundColor;
+
+            // Print the top row's top edge.
+            Console.WriteLine();
+            Console.WriteLine("    _______________________________________");
+
+            // Print all the values of each row's squares - starting with the index of row.
+            for (int y = (_yh-1); y >= 0; y--)
+            {
+                Console.Write( " {0} ", y);
+                for (int x = 0; x < _xw; x++)
+                {
+                    Console.Write("|");
+                    Console.Write("_");
+                    if (_squares[x, y].State == SquareState.Empty)
+                    {
+                        Console.Write("___");
+                    }
+                    else
+                    {
+                        Console.Write("_");
+                        Console.ForegroundColor = _squares[x, y].OuputColor;
+                        Console.Write("X");
+                        Console.ForegroundColor = currentFG;
+                        Console.Write("_");
+                    }
+                }
+                Console.WriteLine("|");
+            }
+
+            // Print the indices of the columns.
+            Console.Write("    ");  // add a little left margin...
+            for (int x = 0; x < XWidth; x++)
+            {
+                Console.Write("  {0}  ", x);
+            }
+            Console.WriteLine();
+        }
     }
 }

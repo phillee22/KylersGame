@@ -6,9 +6,14 @@ namespace GameEngine
 {
     public class BoardPiece : Shape
     {
-        public BoardPiece(Coordinate[] Coordinates)
+        public string Name;
+        public ConsoleColor OutputColor;
+
+        public BoardPiece(string Name, Coordinate[] Coordinates, ConsoleColor OutputColor)
         {
+            this.Name = Name;
             this.Coordinates = new System.Collections.ArrayList(Coordinates);
+            this.OutputColor = OutputColor;
         }
     }
 }
