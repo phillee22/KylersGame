@@ -4,12 +4,16 @@ using System.Text;
 
 namespace GameEngine
 {
-
     //
-    //  the board's origin is bottom-left so all the board squares re in the "first quadrant."
-    //  therefore, coordinates are read right and up - 
+    //  At its core, this board is a 2D array of BoardSquares.
     //
-
+    //  The board's origin is bottom-left so all the board squares are in the "first quadrant."
+    //  Therefore, coordinates are read right and up - the bottom left corner of square is the 
+    //  coordinate's "location."
+    //
+    //  Also, this is really a "console" board since it relies on the Console object to 
+    //  print the output of the board...
+    //
     public class Board
     {
         int _yh;
@@ -62,7 +66,6 @@ namespace GameEngine
             ConsoleColor currentFG = Console.ForegroundColor;
 
             // Print the top row's top edge.
-            Console.WriteLine();
             Console.WriteLine("    _______________________________________");
 
             // Print all the values of each row's squares - starting with the index of row.

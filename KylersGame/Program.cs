@@ -20,7 +20,6 @@ namespace KylersGame
             }
 
             CreateBoard();
-            _b.Print();
 
             CreatePieces();
 
@@ -97,7 +96,6 @@ namespace KylersGame
             }
         }
 
-
         static void PlacePieces()
         {
             Console.WriteLine(" Getting a brute force placement manager.");
@@ -135,6 +133,11 @@ namespace KylersGame
                     m.PlacePiece(bp, loc);
                 }
             }
+
+            Console.WriteLine();
+            Console.WriteLine("  Here's board:");
+            Console.WriteLine();
+            _b.Print();
         }
     }
 }
